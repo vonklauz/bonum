@@ -24,12 +24,12 @@ $(function () {
     });
 
     const reviewsGallery = $(".reviews-gallery").owlCarousel({
-        margin: 20,
+        margin: 0,
         autoWidth: false,
         loop: true,
         mouseDrag: true,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         responsive: {
             0: {
                 items: 1
@@ -39,6 +39,9 @@ $(function () {
             },
             1100: {
                 items: 4
+            },
+            1600: {
+                items: 5
             },
         }
     });

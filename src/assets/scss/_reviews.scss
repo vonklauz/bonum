@@ -1,9 +1,13 @@
 .reviews-section {
+    max-width: 1920px;
+    margin: 0 auto;
     .reviews-gallery {
-        margin-top: 1.875rem;
+        margin-top: 15px;
 
         .gallery-item {
             max-width: 320px;
+            margin: 15px 0px 5px 10px;
+            box-shadow: -5px -5px 8px 0px rgba(0,0,0,.6);
         }
     }
 }
