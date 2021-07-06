@@ -1,0 +1,77 @@
+.pagination {
+    font-family: 'Arial';
+    margin-bottom: 3.75rem;
+
+    &__position {
+        color: rgba(0, 0, 0, 0.8) !important;
+        font-size: 18px;
+        text-decoration: none !important;
+        margin: 0 .75rem;
+    }
+
+    &__direction,
+    &__number {
+        width: 32px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .25s;
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none !important;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+
+            svg {
+                path {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+
+    &__current-page {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        transition: all .25s;
+    }
+
+    .gallery-btn {
+        width: 32px;
+        height: 36px;
+    }
+
+    .left {
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .right {
+        &:after {
+            transform: rotate(135deg);
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .pagination {
+
+        &__number,
+        .gallery-btn {
+            margin-right: .5rem;
+            background-color: $e2Color;
+            color: #ffffff;
+
+            &:hover {
+                background-color: $red;
+            }
+        }
+
+        &__current-page {
+            background-color: $red;
+        }
+    }
+}

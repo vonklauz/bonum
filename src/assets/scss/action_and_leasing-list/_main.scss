@@ -1,0 +1,54 @@
+.action_and_leasing{
+    margin: 60px 0 0 0;
+}
+.list-action{
+    margin: 2em auto 0 auto;
+}
+.action-list{
+    margin: 0 0 3em 0;
+
+    .more-details-btn {
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.action_and_leasing_list__h{
+    margin:2.5em 0 1.5em 0;
+    font-family: $neoMedium;
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 160px;
+    width: 100%;
+    margin: 1rem;
+    margin-left: 0;
+
+    .advantage-img {
+        height: 80px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px){
+    .advantage-item {
+        margin: 1rem auto;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 370px) {
+    .advantage-item {
+        max-width: 145px;
+    }
+}

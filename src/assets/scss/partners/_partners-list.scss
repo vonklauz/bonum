@@ -1,0 +1,16 @@
+.partners_list__item{
+    width: 283px;
+    height: 209px;
+    &:hover{
+        border:2px solid red;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.partners_heading{
+    font-size: 32px;
+    line-height: 34px;
+    font-family: $neoMedium;
+
+}

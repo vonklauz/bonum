@@ -1,0 +1,91 @@
+.agro__primary {
+    .left-half {
+        background-color: $green;
+        background-image: url(../img/agro/agro_back.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+    }
+}
+
+.agro-absolute {
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.absolute-left,
+.absolute-right {
+    top: calc((100% - 504px) / 2);
+}
+
+.absolute-left {
+    left: -105px;
+}
+
+.absolute-right {
+    right: -105px;
+}
+
+// Секция о направлении
+
+.agro__about-section {
+    margin-top: 2rem;
+
+    p {
+        font-family: 'Arial';
+        margin: 1.5rem 0 0 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+// Секция с видео
+.how-we-made-agro {
+    .container-fluid {
+        background-color: transparent;
+
+        .container {
+            position: relative;
+        }
+    }
+}
+
+// Форма
+.agro-choose-complectation {
+    background-color: $green;
+    background-image: url(../img/agro/agro-form.png);
+
+    .standard-headliner {
+        text-transform: uppercase;
+    }
+}
+
+// Акции и лизинг
+.agro-promotes-and-leasing {
+    margin-top: 3.75rem;
+
+    .agro-absolute {
+        top: -60px;
+    }
+
+    .promotes-gallery {
+        margin-top: 1.875rem;
+    }
+}
+
+@media(max-width: 1450px) {
+    .agro-absolute {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    .agro-header-wrapper {
+        .phone-and-hamburger {
+            background-color: $green !important;
+        }
+    }
+}

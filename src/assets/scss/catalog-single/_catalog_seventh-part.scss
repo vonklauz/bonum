@@ -1,0 +1,112 @@
+#catalogSeventh {
+    margin-top: 20px;
+
+    .right-half {
+        padding-left: 2.5rem;
+        padding-top: 1.875rem;
+    }
+}
+
+.catalog-bottom-form {
+    width: 41%;
+    background-color: #2e2e2e;
+
+    form {
+        label {
+            color: #fff;
+        }
+    }
+}
+
+.news-card-horizontal {
+    display: flex;
+    max-width: 763px;
+    margin-top: 1.875rem;
+
+    &:last-of-type {
+        margin-top: 1rem;
+    }
+}
+
+.news-card-horizontal-left {
+    width: 290px;
+    max-height: 290px;
+    background-color: #C4C4C4;
+
+    img {
+        width: 100%;
+        max-height: 100%;
+        height: auto !important;
+    }
+}
+
+.news-card-horizontal-right {
+    padding-left: 1rem;
+    padding-top: .8125rem;
+    max-width: 417px;
+
+    p {
+        margin-top: 1.375rem;
+        font-size: 16px;
+        line-height: 17px;
+        color: #333333;
+        font-family: 'Arial';
+    }
+
+    .standart-btn {
+        margin-top: 1.375rem;
+    }
+}
+
+.catalog-single__seventh-part__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $darkFontColor !important;
+    font-family: 'Arial';
+    margin-top: 1.25rem;
+
+    &:after {
+        display: block;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #333333;
+        border-left: 2px solid #333333;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin-left: .5rem;
+    }
+
+    &:first-child {
+        margin-right: 1.75rem;
+    }
+}
+
+@media(max-width:991px) {
+    #catalogSeventh {
+
+        .right-half {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2.8125rem 1rem 0 1rem;
+        }
+    }
+
+    .news-card-horizontal {
+        flex-direction: column;
+        max-width: 374px;
+        width: 100%;
+
+        &:last-of-type {
+            margin-top: 1.875rem;
+        }
+    }
+
+    .news-card-horizontal-left,
+    .news-card-horizontal-right {
+        width: 100%;
+    }
+}

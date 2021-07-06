@@ -1,0 +1,59 @@
+.breadcrumb {
+    background: none;
+    padding: 2em 0 2em 0;
+}
+
+
+.vacancies-info_duties {
+    margin: 30px 0 31px 0;
+}
+
+.vacancies-info_requirements {
+    margin: 0 0 31px 0;
+}
+
+.vacancies-info_conditions {
+    margin: 0 0 60px 0;
+}
+
+.vacancies-info {
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li:before {
+            content: "— ";
+
+        }
+    }
+}
+
+.vacancies-form {
+    background-image: none;
+    input[type="file"] {
+        position: absolute;
+        left: -1000px;
+    }
+}
+
+.cv-label {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 13px;
+    font-family: 'Arial';
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .vacancies-form {
+        .horizontal-form {
+            .form-group {
+                margin: 1rem 0 1rem 0 !important;
+            }
+
+            button {
+                margin: 0;
+            }
+        }
+    }
+}

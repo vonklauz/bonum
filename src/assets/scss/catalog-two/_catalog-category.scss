@@ -1,0 +1,140 @@
+.category-menu__list {
+    padding: 0 10px;
+}
+
+.category-menu__list li {
+    border: none;
+    border-bottom: 1px solid rgba(102, 99, 102, 0.2);
+    padding: 20px 0 10px 13px !important;
+
+    a {
+        font-family: $neoRegular;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.category-menu {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 0;
+    height: fit-content;
+}
+
+.category-menu_heading {
+    padding: 18px 48px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 22px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: $neoMedium;
+}
+
+
+/* Перенести */
+.catalog-item {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    margin: 0 0 0 5px;
+    margin-top: 1.875rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.catalog-item_txt {
+    margin: 20px 0;
+    font-family: $neoRegular;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.catalog-item_heading {
+    font-size: 23px;
+    line-height: 21px;
+    font-family: $neoMedium;
+    font-weight: 700;
+    margin: 20px 0;
+
+    a {
+        color: $darkFontColor;
+        text-decoration: none;
+        transition: all .25s;
+    }
+
+    &:hover {
+        a {
+            color: $red;
+        }
+    }
+}
+
+.item-span-bold {
+    font-size: 18px;
+    line-height: 19px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.catalog-item_button {
+    margin: 10px 0;
+
+    button {
+        padding: 8px 45px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        border: none;
+        line-height: 19px;
+        font-family: $neoRegular;
+        font-weight: 500;
+        font-size: 16px;
+        transition: all .25s;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background: $red;
+        }
+
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+}
+
+.between-line {
+    border-right: 1px solid rgba(102, 99, 102, 0.2);
+    height: 100%;
+    margin: 0 1rem;
+}
+
+@media(max-width: 768px) {
+    .trailers-catalog-section {
+        .standard-headliner {
+            padding: 1.875rem 0;
+        }
+    }
+
+    .catalog-item_button {
+        button {
+            width: 100%;
+
+            &:last-child {
+                margin-top: .5rem;
+            }
+        }
+    }
+
+    .catalog-item {
+        margin-left: 0;
+    }
+}

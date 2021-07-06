@@ -1,0 +1,25 @@
+@@include('parts/head.html')
+@@include('parts/modal.html')
+@@include('parts/header.html')
+
+<body>
+    <main>
+        <section class="primary inner">
+            <div class="container-fluid d-flex flex-column flex-lg-row px-0 ">
+                <div
+                    class="d-none left-half d-lg-flex d-xl-flex align-items-center justify-content-md-center justify-content-lg-end order-1 order-lg-0">
+                    <div class="form-wrapper">
+                        <h1 class="headliner-inner mb-0">О заводе</h1>
+                    </div>
+                </div>
+                <div class="right-half">
+                    <div>
+                        <img src="/assets/img/action_and_leasing/primary_action.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('parts/about_factory/first-half.html')
+        @@include('parts/about_factory/second-half.html')
+    </main>
+    @@include('parts/footer.html')

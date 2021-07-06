@@ -1,0 +1,582 @@
+@import '_fonts';
+
+//Цвета
+$e2Color:#2E2E2E;
+$darkFontColor: rgba(0, 0, 0, 0.8);
+$red: #F52F2F;
+$green: #00B052;
+
+
+//Шрифты
+$neoRegular: 'Neo Sans Pro Regular';
+$neoMedium: 'Neo Sans Pro Medium';
+
+//Для удобной задачи шрифта
+@mixin font($font_name, $weight, $size, $line_height) {
+    font-family: $font_name;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line_height;
+}
+
+// Главная страница и общие компоненты
+@import '_header';
+@import '_modal';
+@import '_primary';
+@import '_advantages';
+@import '_main-gallery';
+@import '_promotes&leasing';
+@import '_choose_complectation';
+@import '_awards';
+@import '_how_we_made';
+@import '_news';
+@import '_factory';
+@import '_footer';
+@import '_checkbox';
+@import '_reviews';
+
+// Вакансии
+@import 'vacancies/_primary-vacancies.scss';
+@import 'vacancies/_info-vacancies.scss';
+
+// Акции и лизинг
+@import 'action_and_leasing/_primary-action_and_leasing.scss';
+@import 'action_and_leasing/_main-action_and_leasing.scss';
+@import 'action_and_leasing-list/_primary.scss';
+@import 'action_and_leasing-list/_list.scss';
+@import 'action_and_leasing-list/_main.scss';
+
+// Каталог
+@import 'catalog-one/_catalog-content.scss';
+@import 'catalog-one/_catalog.scss';
+@import 'catalog-two/_catalog-category.scss';
+@import 'catalog-single/_catalog_stages';
+@import 'catalog-single/_catalog_first-part';
+@import 'catalog-single/_catalog_second-part';
+@import 'catalog-single/_catalog_third-part';
+@import 'catalog-single/_catalog_fourth-part';
+@import 'catalog-single/_catalog_fiveth-part';
+@import 'catalog-single/_catalog_sixth-part';
+@import 'catalog-single/_catalog_seventh-part';
+
+// Секция сельхоз
+@import 'agro/_agro';
+@import 'agro/_goods-row';
+@import 'agro/_agro-details';
+
+// Конфигуратор
+@import 'configurator/_configurator';
+
+// Нижний налив
+@import 'bottom-filling/_bottom-filling';
+
+// Энциклопедия
+@import 'encyclopedia/_encyclopedia.scss';
+@import 'encyclopedia_inside/_encyclopedia_inside.scss';
+
+// Партнёры
+@import 'partners/_partners-list.scss';
+@import 'partners-inside/partners-inside';
+
+// Сервис и гарантии
+@import 'services_and_warranty/_services_and_warranty.scss';
+@import 'services_and_warranty/_services_map.scss';
+
+// Запчасти
+@import 'spare_parts/_spare_parts.scss';
+
+// Новости
+@import 'news/_news.scss';
+
+// Пагинация
+@import '_pagination';
+
+// О заводе
+@import 'about_factory/_about_factory';
+
+// Сотрудники
+@import 'workers/_workers';
+
+// Награды
+@import 'awards/_awards';
+
+// Кайдзен
+@import 'kaizen/_kaizen';
+
+// 4040
+@import '_404';
+
+//Ширина сетки на сайте и изменение стилей бутстрапа
+.container {
+    max-width: 1240px;
+}
+
+.breadcrumb {
+    margin-top: 23px;
+    padding: 0;
+    margin-bottom: 7px;
+}
+
+// Лечение бага карусели при медленном инете, когда карусель распадется на несколько строк
+.owl-stage {
+    min-width: 10000px;
+}
+
+body {
+    position: relative;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+button:disabled {
+    cursor: default;
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+//Стили для большинства заголовков на сайте
+.standard-headliner {
+    @include font($neoMedium, 'normal', 30px, 32px);
+}
+
+//Стили для большинства текстов/лейблов на сайте
+.standart-p {
+    @include font($neoRegular, 'normal', 16px, 17px);
+}
+
+//Стили для большинства кнопок на сайте
+.standart-btn {
+    display: block;
+    font-family: $neoMedium;
+    color: #ffff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all .25s;
+    text-decoration: none !important;
+
+    a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        color: #fff;
+    }
+}
+
+a.standart-btn {
+    color: #fff !important;
+}
+
+.red-btn {
+    background-color: $red;
+
+    a {
+        color: #fff;
+    }
+}
+
+.black-btn {
+    background-color: #333333;
+
+    &:hover {
+        background-color: $red;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.green-btn {
+    background-color: $green;
+
+    a {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.white-btn {
+    background-color: #fff;
+    color: $darkFontColor;
+    border: 2px solid #333333;
+
+    &:hover {
+        background-color: $red;
+        color: #fff;
+        border: 2px solid $red;
+    }
+}
+
+.more-details-btn {
+    font-size: 16px;
+    line-height: 17px;
+    padding: .375rem .75rem;
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    transition: all .25s;
+    width: fit-content;
+    color: #fff;
+
+    &:after {
+        content: "";
+        width: 9px;
+        height: 7px;
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #fff;
+        transform: rotate(135deg);
+        margin-left: 1.5rem;
+    }
+
+    &:hover {
+        background-color: $red;
+    }
+}
+
+//Кнопка при белом бэке
+.more-details-btn__white {
+    background-color: #fff;
+    color: #000;
+
+    &:after {
+        content: "";
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        margin-left: 0.5rem;
+
+    }
+
+    &:hover {
+        background-color: $red;
+    }
+}
+
+//Стили для картинок в инпутах
+form {
+    input[type=text] {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 0;
+
+        .absolute-img {
+            position: absolute;
+            left: .625rem;
+        }
+    }
+
+    input {
+        background-size: 24px;
+        background-position: 8px;
+        background-repeat: no-repeat;
+    }
+
+    input[name=phone] {
+        background-image: url(../img/input_phone_back.svg);
+    }
+
+    input[name=name] {
+        background-image: url(../img/input_name_back.svg);
+    }
+}
+
+//Вертикальная форма на разных страницах
+.vertical-form {
+    max-width: 312px;
+
+    .form-group {
+        margin-bottom: 0;
+
+        input[type=text] {
+            width: 100%;
+            border: none;
+            padding: .4375rem 2.5rem;
+            position: relative;
+        }
+
+        &:nth-child(2) {
+            margin-top: .875rem;
+        }
+
+        &:nth-child(3) {
+            margin-top: 1.6875rem;
+
+            label {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .standart-btn {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem 0;
+        font-size: 20px;
+        line-height: 21px;
+    }
+}
+
+//Горизонтальная форма
+.horizontal-form-section {
+    padding-top: 3.3125rem;
+    padding-bottom: 1rem;
+    background-color: #333333;
+    color: #fff;
+
+    .standard-headliner {
+        font-size: 42px;
+        line-height: 45px;
+    }
+
+    .standart-p {
+        font-size: 18px;
+        line-height: 19px;
+        margin-top: 1.6875rem;
+    }
+
+    .horizontal-form {
+        margin-top: 3.125rem;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+
+        &:first-child,
+        &:nth-child(2) {
+            max-width: 312px;
+        }
+
+        &:nth-child(2) {
+            margin-left: 1.125rem;
+        }
+    }
+
+    .red-btn {
+        max-width: 312px;
+        margin-left: 3.375rem;
+        font-size: 24px;
+    }
+
+    .red-btn,
+    input[type=text] {
+        padding: .8125rem 2rem;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+}
+
+//Карточка с контентом
+.standart-card {
+    width: 100%;
+    max-width: 400px;
+    min-height: 327px;
+    margin-top: .875rem;
+    padding: 1.25rem;
+    color: $darkFontColor;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+
+    .standart-card-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .standart-card-big-p {
+        @include font($neoMedium, 'normal', 22px, 24px);
+        text-transform: uppercase;
+        margin-top: 1.25rem;
+
+        span {
+            text-transform: none;
+        }
+    }
+
+    .standart-p {
+        margin-top: .625rem;
+    }
+}
+
+//Стрелки в галереях
+.gallery-btn {
+    width: 30px;
+    height: 30px;
+    background-color: $e2Color;
+    border: none;
+    border-radius: 0;
+    transition: all .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: .375rem;
+
+    &:hover {
+        background-color: $red;
+    }
+
+    &:after {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #fff;
+    }
+
+    &:first-child {
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &:last-child {
+        &:after {
+            transform: rotate(135deg);
+        }
+    }
+}
+
+//Хлебные крошки
+.breadcrumb-item {
+    a {
+        color: #333333;
+        text-decoration: none;
+    }
+}
+
+//Карточка акции / новости
+.news-and-promotes-card {
+    
+    width: 100%;
+    max-width: 400px;
+    padding: 1.25rem;
+    min-height: 446px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+
+    img {
+        width: 100%;
+    }
+
+    .date-block {
+        display: flex;
+
+        div {
+            padding: 1rem 1.25rem;
+            @include font($neoRegular, 'normal', 22px, 24px);
+            width: 50%;
+            text-align: center;
+
+            &:first-child {
+                background-color: #333333;
+                color: #fff;
+            }
+
+            &:last-child {
+                color: #A6A4A6;
+            }
+        }
+    }
+
+    .standart-p {
+        margin-top: .3125rem;
+    }
+
+    .more-details-btn {
+        margin-top: 1.875rem;
+    }
+}
+
+.page-item a:hover {
+    background: transparent !important;
+    border: none;
+}
+
+.page-item a {
+    border: none;
+    color: rgba(0, 0, 0, .8) !important;
+    font-size: 18px;
+    text-decoration: none !important;
+    margin: 0 .75rem;
+}
+
+
+
+.catalog-single__attributes-text {
+    margin-top: 1em;
+}
+
+
+.horizontal-form-section input[type=tel] {
+    width: 100%;
+}
+
+.horizontal-form-section .red-btn,
+.horizontal-form-section input[type=tel] {
+    padding: .8125rem 2rem;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+
+.vertical-form .form-group input[type=tel] {
+    width: 100%;
+    border: none;
+    padding: .4375rem 2.5rem;
+    position: relative;
+}
+
+.allNews {
+    text-align: right;
+
+}
+
+.pagination__direction,
+.pagination__number {
+    width: 81px;
+}
+
+#servicePhone {
+    a {
+        display: block;
+    }
+}
+
+@media(max-width: 991px) {
+    .gallery-btn {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .standart-card {
+        max-width: 350px;
+
+        .standart-card-big-p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .news-and-promotes-card {
+        .date-block {
+            div {
+                font-size: 18px;
+            }
+        }
+    }
+}

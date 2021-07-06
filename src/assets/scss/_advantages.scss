@@ -1,0 +1,31 @@
+.advantages-section {
+    padding: 3.75rem 0;
+
+    .cards-wrapper {
+        margin-top: 1.125rem;
+    }
+
+    .standart-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: auto;
+
+        &-img {
+            width: 35%;
+        }
+
+        &-text {
+            width: 63%;
+        }
+
+        .standart-p {
+            font-size: 14px;
+        }
+
+        &-big-p {
+            margin-top: 0 !important;
+            font-size: 20px !important;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.spare-parts-primary {
+    .left-half {
+        background-image: url(../img/spare_parts/gears.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+
+.spare-parts-first {
+    margin-top: 3.75rem;
+
+    p {
+        margin-top: 1.25rem;
+    }
+}
+
+.spare-parts_catalog {
+    margin-top: 4.0625rem;
+
+    &__card {
+        height: 263px;
+        max-width: 413px;
+        width: 100%;
+        margin-top: .625rem;
+        margin-right: .625rem;
+        padding: 2.5rem 3.125rem;
+        background-image: url(../img/spare_parts/BONUM.svg);
+        background-repeat: no-repeat;
+        background-position: 96%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h5 {
+            font-size: 24px;
+            line-height: 26px;
+            color: #ffffff;
+            font-family: $neoMedium;
+        }
+
+        .standart-btn {
+            margin-left: auto;
+            width: 200px;
+            font-size: 18px;
+            line-height: 19px;
+            padding: 0.625rem;
+        }
+    }
+
+    .black-bg {
+        background-color: #0E0900;
+    }
+
+    .silver-bg {
+        background-color: #696969;
+    }
+
+    .gray-bg {
+        background-color: #404040;
+    }
+
+    .green-bg {
+        background-color: #00B052;
+    }
+}
+
+.delivery-and-warranty {
+    margin-top: 3.75rem;
+    margin-bottom: 7.25rem;
+
+    &__top {
+        background-color: #A6A4A6;
+        padding: 1.25rem 2.5rem;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 32px;
+        font-family: $neoMedium;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        margin-top: 2.5rem;
+
+        p {
+            font-family: 'Arial';
+            line-height: 18px;
+        }
+    }
+}
+
+.services-section {
+    margin-top: 3.75rem;
+
+    &__select-wrapper {
+        position: relative;
+        border: 1px solid #A6A4A6;
+        width: 98%;
+        min-width: 290px;
+        background-color: #ffffff;
+        overflow: hidden;
+
+        .custom-arrow {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 20px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            z-index: 0;
+        }
+
+        &:last-of-type {
+            margin-top: 1rem;
+        }
+    }
+
+    &__select {
+        border: none;
+        border-radius: 0%;
+        padding: 1rem .625rem;
+        font-family: 'Arial';
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+        background: transparent;
+        z-index: 1;
+        position: relative;
+        width: 105%;
+    }
+
+    .standart-btn {
+        margin-top: 1rem;
+        padding: 1rem 0;
+        font-size: 20px;
+        line-height: 21px;
+        width: 98%;
+        min-width: 290px;
+    }
+
+    &__service-name {
+        margin-top: 1.875rem;
+        font-family: $neoMedium;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    &__service-contacts {
+        margin-top: 1rem;
+        list-style-type: none;
+
+        li {
+            margin-top: .625rem;
+
+            a {
+                color: #333333;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+@media(min-width: 992px) {
+    .spare-parts_catalog {
+        &__card {
+            width: 32.6%;
+
+            &:nth-child(3),
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 700px) and (max-width:991px) {
+    .spare-parts_catalog {
+        &__card {
+            width: 48%;
+
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .delivery-and-warranty {
+        &__top {
+            width: 99% !important;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.agro-details {
+    background-color: $green;
+    margin-top: 2.5rem;
+
+    .catalog-single__details {
+        hr {
+            border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+        }
+    }
+
+    .catalog-single__details-visual__absolute_line {
+        border: 2px solid $green;
+    }
+
+    .catalog-single__details-visual__absolute__fourth {
+        left: 40%;
+        top: 50%;
+    }
+
+    .catalog-single__details-visual__absolute_border {
+        border: 2px dotted $green;
+    }
+}

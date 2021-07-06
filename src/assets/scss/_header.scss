@@ -1,0 +1,269 @@
+//Стили для верхней части хедера
+
+.header-top {
+    background-color: #FDFDFD;
+}
+
+.header-wrapper {
+    .logo {
+        max-width: 623px;
+        width: 100%;
+
+        picture,
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .header-phone {
+        @include font($neoMedium, 'normal', 24px, 26px);
+        text-decoration: none;
+        color: $e2Color;
+    }
+
+    .request-call {
+        @include font($neoMedium, 'normal', 16px, 17px);
+        color: #fff;
+        background-color: $e2Color;
+        width: 100%;
+        margin-top: .3125rem;
+        padding: .625rem 0;
+        border: none;
+        border-radius: 0px;
+    }
+}
+
+//Стили для гамбургера
+.hamburger {
+    width: 34px;
+    padding-bottom: .25rem;
+
+    .hamburger-part {
+        margin-top: .25rem;
+        height: .25rem;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: all .25s;
+    }
+}
+
+.hamburger-opened {
+    padding-bottom: 0;
+
+    .hamburger-part {
+
+        &:nth-child(1),
+        &:nth-child(4) {
+            display: none;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            background-color: $red;
+            margin-top: -4px;
+
+        }
+
+        &:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+//Конец стилей для гамбургера
+//Конец стилей для верхней части хедера
+
+
+//Стили для нижней части хедера
+.desktop-menu {
+    padding: 1.75rem 0;
+
+    .desktop-menu-items {
+        margin-bottom: 0;
+
+        li {
+            list-style-type: none;
+        }
+
+        .menu-item {
+            padding: .4375rem 1.5625rem;
+            @include font($neoRegular, 'normal', 16px, 19px);
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: $e2Color;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: all .25s;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+
+
+            .desktop-menu-dropdown {
+                padding: 0;
+                border-radius: 0;
+                display: none;
+                position: absolute;
+                left: 0;
+                background-color: #fff;
+                z-index: 2;
+                box-shadow: 0 1px 10px 1px rgba(0,0,0,.15);
+
+                .dropdown-item {
+                    padding: .5rem .652rem;
+                    border-bottom: 1px solid #CBCBCB;
+                    color: #333333;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:active {
+                        background-color: #00B052;
+                    }
+                }
+            }
+
+            .dropdown-wrapper {
+                position: relative;
+
+                &:hover {
+                    .desktop-menu-dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .menu-border {
+            height: auto;
+            border-right: 1px solid rgba(102, 99, 102, 0.2);
+        }
+
+
+
+        .soc-links {
+            li {
+                margin-left: .75rem;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .lang-switch {
+            text-transform: uppercase;
+            @include font($neoMedium, 'normal', 18px, 19px);
+            margin-left: 1.5625rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            position: relative;
+            cursor: pointer;
+
+            svg {
+                position: absolute;
+                top: 6px;
+                right: -15px;
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 1270px) {
+    .desktop-menu {
+        .desktop-menu-items {
+
+            .menu-item {
+                padding: .4375rem .4rem;
+            }
+
+            .lang-switch {
+                margin-left: .4rem;
+            }
+        }
+    }
+}
+
+//Конец стилей для нижней части хедера
+
+//Мобильное меню
+@media(max-width: 991px) {
+    .header-wrapper {
+        padding: 0;
+
+        .header-top,
+        .header-bottom {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .logo {
+            padding: 0 1.875rem;
+        }
+
+        .phone-and-hamburger {
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            min-height: 52px;
+
+            .header-phone {
+                @include font($neoMedium, 'normal', 20px, 21px);
+                color: #ffffff;
+
+                svg {
+                    path {
+                        fill: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .mobile-menu {
+            ul {
+                padding-left: 0;
+                list-style-type: none;
+
+                .mobile-menu-item {
+                    padding: 1.25rem 0;
+                    padding-left: 1rem;
+                }
+
+                li {
+
+                    a {
+                        @include font($neoRegular, 'normal', 18px, 19px);
+                        color: #333333;
+                    }
+
+                    .mobile-menu-collapse {
+                        li {
+
+                            padding: .625rem;
+                        }
+                    }
+                }
+
+                .with-border {
+                    border-bottom: 1px solid #CBCBCB;
+                }
+            }
+        }
+    }
+
+}

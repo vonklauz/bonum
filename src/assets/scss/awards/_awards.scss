@@ -1,0 +1,116 @@
+.awards-and-vacancies_top {
+    h3 {
+        margin-top: 35px;
+    }
+
+    p {
+        font-family: 'Arial';
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+}
+
+.awards-list {
+    &__card {
+        width: 287px;
+        color: rgba(0, 0, 0, 0.8);
+        padding: 20px 20px 30px 20px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+        margin: 30px 30px 0 0;
+
+
+        img {
+            max-width: 100%;
+            height: 245px !important;
+            object-fit: contain;
+        }
+
+        h5 {
+            font-size: 20px;
+            line-height: 21px;
+            font-family: $neoMedium;
+            margin: 10px 0 0 0;
+        }
+
+        p {
+            margin: 10px 0 0 0;
+            font-family: 'Arial';
+        }
+    }
+}
+
+.review-list {
+    margin-top: 60px;
+}
+
+@media(min-width: 1210px) {
+    .awards-list-first {
+        .awards-list__card {
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .review-list {
+        .awards-list__card {
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 951px) and (max-width: 1209px) {
+    .awards-list-first {
+        .awards-list__card {
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .review-list {
+        .awards-list__card {
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 634px) and (max-width: 950px) {
+    .awards-list-first {
+        .awards-list__card {
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .review-list {
+        .awards-list__card {
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 633px) {
+    .awards-list-first {
+        .awards-list__card {
+            &:nth-child(1n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .review-list {
+        .awards-list__card {
+            &:nth-child(1n) {
+                margin-right: 0;
+            }
+        }
+    }
+}

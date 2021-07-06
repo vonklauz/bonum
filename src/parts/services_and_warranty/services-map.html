@@ -1,0 +1,131 @@
+<section class="services-map">
+    <div class="container p-xl-0">
+        <h3 class="standard-headliner">
+            На сайте представлены не все рекомендованные станции, весь список для своего региона лучше уточнить у
+            менеджера завода.
+        </h3>
+    </div>
+    <div class="container p-xl-0">
+        <div class="map-wrapper flex-wrap flex-md-nowrap">
+            <div class="map-wrapper__left">
+                <div class="map-wrapper__select-wrapper">
+                    <select name="city" id="citySelect" class="map-wrapper__select d-block">
+                        <option value="false">Выберите населенный пункт</option>
+                        <!-- <option value="aksay">Аксай</option>
+                        <option value="artem">Артем</option>
+                        <option value="arhangelsk">Архангельск</option>
+                        <option value="barnaul">Барнаул</option>
+                        <option value="bataysk">Батайск</option>
+                        <option value="belgorod">Белгород</option>
+                        <option value="belovo">Белово</option>
+                        <option value="berezovsky">Березовский</option>
+                        <option value="blagoveshensk">Благовещенск</option>
+                        <option value="bratsk">Братск</option>
+                        <option value="luki">Великие Луки</option>
+                        <option value="velikynovgorod">Великий Новгород</option>
+                        <option value="vladivostok">Владивосток</option>
+                        <option value="vladimir">Владимир</option>
+                        <option value="volgograd">Волгоград</option>
+                        <option value="volzhsky">Волжский</option>
+                        <option value="vologda">Вологда</option>
+                        <option value="voronezh">Воронеж</option>
+                        <option value="vyborg">Выборг</option>
+                        <option value="hotkey">Горячий ключ</option>
+                        <option value="sponge">Губкин</option>
+                        <option value="dzerzhinsk">Дзержинск</option>
+                        <option value="dolgoprudny">Долгопрудный</option>
+                        <option value="domodedovo">Домодедово</option>
+                        <option value="ekaterinburg">Екатеринбург</option>
+                        <option value="elabuga">Елабуга</option>
+                        <option value="zelenograd">Зеленоград</option>
+                        <option value="izhevsk">Ижевск</option>
+                        <option value="irkutsk">Иркутск</option>
+                        <option value="istra">Истра</option>
+                        <option value="kazan">Казань</option>
+                        <option value="kenigsberg">Калининград</option>
+                        <option value="kemerovo">Кемерово</option>
+                        <option value="kiparisovo">Кипарисово</option>
+                        <option value="kirov">Киров</option>
+                        <option value="kola">Кола</option>
+                        <option value="kotlas">Котлас</option>
+                        <option value="krasnodar">Краснодар</option>
+                        <option value="krasnoyarsk">Красноярск</option>
+                        <option value="kurgan">Курган</option>
+                        <option value="lipetsk">Липецк</option>
+                        <option value="lubertsy">Люберцы</option>
+                        <option value="magadan">Магадан</option>
+                        <option value="minvody">Минеральные воды</option>
+                        <option value="moskva">Москва</option>
+                        <option value="minvody">Набережные челны</option>
+                        <option value="fominsk">Наро-фоминск</option>
+                        <option value="nizhnynovgorod">Нижний новгород</option>
+                        <option value="minvody">Новосибирск</option>
+                        <option value="urengoy">Новый Уренгой</option>
+                        <option value="omsk">Омск</option>
+                        <option value="orel">Орел</option>
+                        <option value="orenburg">Оренбург</option>
+                        <option value="huevokukuevo">Орехово-Зуево</option>
+                        <option value="pavlovsky">Павловский посад</option>
+                        <option value="penza">Пенза</option>
+                        <option value="perm">Пермь</option>
+                        <option value="petrozavodsk">Петрозаводск</option>
+                        <option value="rostov">Ростов-на-Дону</option>
+                        <option value="ryazan">Рязаеь</option>
+                        <option value="samara">Самара</option>
+                        <option value="spb">Санкт-Петербург</option>
+                        <option value="saratov">Саратов</option>
+                        <option value="smolensk">Смоленск</option>
+                        <option value="solnechnogorsk">Солнечногорск</option>
+                        <option value="sochi">Сочи</option>
+                        <option value="stavropol">Ставрополь</option>
+                        <option value="oskol">Старый Оскол</option>
+                        <option value="surgut">Сургут</option>
+                        <option value="tver">Тверь</option>
+                        <option value="togliatti">Тольятти</option>
+                        <option value="tumen">Тюмень</option>
+                        <option value="ulan">Улан-Удэ</option>
+                        <option value="vyatka">Ульяновск</option>
+                        <option value="ufa">Уфа</option>
+                        <option value="habarovsk">Хабаровск</option>
+                        <option value="chelyabinsk">Челябинск</option>
+                        <option value="shushari">Шушары</option>
+                        <option value="yar">Ярославль</option>
+                        <option value="orenburg">Ясногорск</option> -->
+                    </select>
+                    <div class="custom-arrow">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 12L0.0717964 0L13.9282 0L7 12Z" fill="#333333" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="map-wrapper__select-wrapper mt-3">
+                    <select name="city" id="stationSelect" class="map-wrapper__select d-block">
+                        <option value="false">Любой тип сервисного центра</option>
+                        <!-- <option value="wabcoStore">Авторизированные Магазины Wabco</option>
+                        <option value="saf">Сервисные станции SAF</option>
+                        <option value="bpw">Сервисные центры BPW</option>
+                        <option value="wabcoServiceNoWar">Сервисные центры Wabco без поддержки гарантии</option>
+                        <option value="wabcoServiceWar">Сервисные центры Wabco с поддержкой гарантии</option>
+                        <option value="bonumRecommend">Сервисный центр рекомендованный BONUM</option> -->
+                    </select>
+                    <div class="custom-arrow">
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 12L0.0717964 0L13.9282 0L7 12Z" fill="#333333" />
+                        </svg>
+                    </div>
+                </div>
+                <button class="standart-btn black-btn" id="findService">
+                    Найти
+                </button>
+                <div class="map-wrapper__services-list">
+                    <div class="map-wrapper__service-contacts">
+
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper__right" id="serviceMap1">
+                <!-- <img src="/assets/img/map.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,739 @@
+@@include('parts/head.html')
+@@include('parts/modal.html')
+
+<body>
+    @@include('parts/header.html')
+    <main>
+        <section class="configurator__section">
+            <div class="container p-0">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="catalog-one.html">Каталог</a></li>
+                        <li class="breadcrumb-item"><a href="catalog-two.html">Бензовозы BONUM</a></li>
+                        <li class="breadcrumb-item"><a href="catalog-single.html">Бензовоз BONUM 914210 (для перевозки
+                                ГСМ)</a></li>
+                    </ol>
+                </nav>
+                <h3 class="standard-headliner">
+                    Конфигуратор
+                </h3>
+                <div class="d-flex flex-column flex-md-row configurator__content-wrapper">
+                    <div class="configurator__menu order-2 order-md-1">
+                        <ul>
+                            <li data-name="type-of-semitrailer">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Тип полуприцепа</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample">
+                                        Тип полуприцепа
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="type-of-semitrailer" id="configOption11">
+                                                <label for="configOption11">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="type-of-semitrailer" id="configOption12">
+                                                <label for="configOption12">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="type-of-semitrailer" id="configOption13">
+                                                <label for="configOption13">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="type-of-semitrailer" id="configOption14">
+                                                <label for="configOption14">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-12 p-0 configurator__menu__chosen-option">
+                                    Выбранный тип
+                                </div> -->
+                            </li>
+                            <li data-name="body-material">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Материал корпуса</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample2" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample2">
+                                        Материал корпуса
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample2">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="body-material" id="configOption21">
+                                                <label for="configOption21">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="body-material" id="configOption22">
+                                                <label for="configOption22">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="body-material" id="configOption23">
+                                                <label for="configOption23">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="body-material" id="configOption24">
+                                                <label for="configOption24">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="cargo-volume">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Объём перевозимого груза, м3</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample3" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample3">
+                                        Объём перевозимого груза, м3
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample3">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="cargo-volume" id="configOption31">
+                                                <label for="configOption31">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="cargo-volume" id="configOption32">
+                                                <label for="configOption32">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="cargo-volume" id="configOption33">
+                                                <label for="configOption33">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="cargo-volume" id="configOption34">
+                                                <label for="configOption34">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="axile-selection">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Выбор осей</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample4" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample4">
+                                        Выбор осей
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample4">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="axile-selection" id="configOption41">
+                                                <label for="configOption41">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="axile-selection" id="configOption42">
+                                                <label for="configOption42">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="axile-selection" id="configOption43">
+                                                <label for="configOption43">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="axile-selection" id="configOption44">
+                                                <label for="configOption44">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="light-selection">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Выбор освещения</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample5" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample5">
+                                        Выбор освещения
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample5">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="light-selection" id="configOption51">
+                                                <label for="configOption51">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="light-selection" id="configOption52">
+                                                <label for="configOption52">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="light-selection" id="configOption53">
+                                                <label for="configOption53">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="light-selection" id="configOption54">
+                                                <label for="configOption54">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="stoppers">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Тормоза</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample6" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample6">
+                                        Тормоза
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample6">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="stoppers" id="configOption61">
+                                                <label for="configOption61">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="stoppers" id="configOption62">
+                                                <label for="configOption62">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="stoppers" id="configOption63">
+                                                <label for="configOption63">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="stoppers" id="configOption64">
+                                                <label for="configOption64">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="lifting-axile">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Подъемная ось</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample7" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample7">
+                                        Подъемная ось
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample7">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="lifting-axile" id="configOption71">
+                                                <label for="configOption71">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="lifting-axile" id="configOption72">
+                                                <label for="configOption72">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="lifting-axile" id="configOption73">
+                                                <label for="configOption73">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="lifting-axile" id="configOption74">
+                                                <label for="configOption74">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="num-of-sections">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Кол-во отсеков</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample8" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample8">
+                                        Кол-во отсеков
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample8">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="num-of-sections" id="configOption81">
+                                                <label for="configOption81">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="num-of-sections" id="configOption82">
+                                                <label for="configOption82">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="num-of-sections" id="configOption83">
+                                                <label for="configOption83">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="num-of-sections" id="configOption84">
+                                                <label for="configOption84">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="recuper-system">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Система рекуперации</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample9" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample9">
+                                        Система рекуперации
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample9">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="recuper-system" id="configOption91">
+                                                <label for="configOption91">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="recuper-system" id="configOption92">
+                                                <label for="configOption92">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="recuper-system" id="configOption93">
+                                                <label for="configOption93">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="recuper-system" id="configOption94">
+                                                <label for="configOption94">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="two-sides-draining">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Слив на 2 стороны</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample10" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample10">
+                                        Слив на 2 стороны
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample10">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="two-sides-draining" id="configOption101">
+                                                <label for="configOption101">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="two-sides-draining" id="configOption102">
+                                                <label for="configOption102">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="two-sides-draining" id="configOption103">
+                                                <label for="configOption103">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="two-sides-draining" id="configOption104">
+                                                <label for="configOption104">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="blow-station">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Насосная станция</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample11" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample11">
+                                        Насосная станция
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample11">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="blow-station" id="configOption111">
+                                                <label for="configOption111">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="blow-station" id="configOption112">
+                                                <label for="configOption112">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="blow-station" id="configOption113">
+                                                <label for="configOption113">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="blow-station" id="configOption114">
+                                                <label for="configOption114">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-name="counter-filter">
+                                <div class="col-12 p-0 d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="d-none d-md-block">Счетчик с фильтром ППО-40</p>
+                                    <a class="d-md-none" data-toggle="collapse" href="#collapseExample12" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample12">
+                                        Счетчик с фильтром ППО-40
+                                    </a>
+                                    <span></span>
+                                    <div class="col-12 p-0 collapse" id="collapseExample12">
+                                        <form class="col-12 p-0 configurator__right__bottom__options" id="configForm1">
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="counter-filter" id="configOption121">
+                                                <label for="configOption121">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="counter-filter" id="configOption122">
+                                                <label for="configOption122">TOHAP</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="counter-filter" id="configOption123">
+                                                <label for="configOption123">BPW</label>
+                                            </div>
+                                            <div class="col-12 col-md-6 p-md-0">
+                                                <input type="radio" name="counter-filter" id="configOption124">
+                                                <label for="configOption124">BPW</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="configBottomFirstPartMobile">
+                            <button class="standart-btn black-btn d-md-none" disabled id="configurateBtnMobile">
+                                Сконфигурировать
+                            </button>
+                        </div>
+                        <div id="configBottomSecondPartMobile" class="d-none">
+                            <button class="standart-btn black-btn d-md-none" id="orderBtnMobile"
+                                title="Сконфигурируйте все опции прежде, чем продолжить">Заказать</button>
+                            <button class="standart-btn white-btn d-md-none" id="countLeasingBtnMobile"
+                                title="Сконфигурируйте все опции прежде, чем продолжить">Рассчитать лизинг</button>
+                            <button class="standart-btn white-btn d-md-none" id="goBackBtnMobile"
+                                title="Сконфигурируйте все опции прежде, чем продолжить">Редактировать</button>
+                        </div>
+                    </div>
+                    <div
+                        class="configurator__right d-lg-flex flex-lg-column justify-content-lg-between order-1 order-md-2">
+                        <img src="/assets/img/configurator/configurator.png" alt="">
+                        <div class="configurator__right__bottom d-none d-md-block">
+                            <div id="configBottomFirstPart">
+                                <form class="col-12 p-0 configurator__right__bottom__options" id="configFormDesktop">
+
+                                    <!-- 1 -->
+                                    <div class="d-flex flex-wrap showed-block" id="cofigsVar1" data-order="1"
+                                        data-name="type-of-semitrailer">
+                                        <h6 class="col-12 p-0">
+                                            Тип полуприцепа
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="type-of-semitrailer"
+                                                id="configOptionDesktop11">
+                                            <label for="configOptionDesktop11">TOHAP</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="type-of-semitrailer" id="configOptionDesktop12">
+                                            <label for="configOptionDesktop12">TOHAP</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="type-of-semitrailer" id="configOptionDesktop13">
+                                            <label for="configOptionDesktop13">BPW</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="type-of-semitrailer" id="configOptionDesktop14">
+                                            <label for="configOptionDesktop14">BPW</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar2" data-order="2"
+                                        data-name="body-material">
+                                        <h6 class="col-12 p-0">
+                                            Материал корпуса
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="body-material"
+                                                id="configOptionDesktop21">
+                                            <label for="configOptionDesktop21">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="body-material" id="configOptionDesktop22">
+                                            <label for="configOptionDesktop22">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="body-material" id="configOptionDesktop23">
+                                            <label for="configOptionDesktop23">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="body-material" id="configOptionDesktop24">
+                                            <label for="configOptionDesktop24">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar3" data-order="3"
+                                        data-name="cargo-volume">
+                                        <h6 class="col-12 p-0">
+                                            Объём перевозимого груза, м3
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="cargo-volume"
+                                                id="configOptionDesktop31">
+                                            <label for="configOptionDesktop31">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="cargo-volume" id="configOptionDesktop32">
+                                            <label for="configOptionDesktop32">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="cargo-volume" id="configOptionDesktop33">
+                                            <label for="configOptionDesktop33">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="cargo-volume" id="configOptionDesktop34">
+                                            <label for="configOptionDesktop34">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar4" data-order="4"
+                                        data-name="axile-selection">
+                                        <h6 class="col-12 p-0">
+                                            Выбор осей
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="axile-selection"
+                                                id="configOptionDesktop41">
+                                            <label for="configOptionDesktop41">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="axile-selection" id="configOptionDesktop42">
+                                            <label for="configOptionDesktop42">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="axile-selection" id="configOptionDesktop43">
+                                            <label for="configOptionDesktop43">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="axile-selection" id="configOptionDesktop44">
+                                            <label for="configOptionDesktop44">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5-->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar5" data-order="5"
+                                        data-name="light-selection">
+                                        <h6 class="col-12 p-0">
+                                            Выбор освещения
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="light-selection"
+                                                id="configOptionDesktop51">
+                                            <label for="configOptionDesktop51">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="light-selection" id="configOptionDesktop52">
+                                            <label for="configOptionDesktop52">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="light-selection" id="configOptionDesktop53">
+                                            <label for="configOptionDesktop53">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="light-selection" id="configOptionDesktop54">
+                                            <label for="configOptionDesktop54">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 6 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar6" data-order="6"
+                                        data-name="stoppers">
+                                        <h6 class="col-12 p-0">
+                                            Тормоза
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="stoppers"
+                                                id="configOptionDesktop61">
+                                            <label for="configOptionDesktop61">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="stoppers" id="configOptionDesktop62">
+                                            <label for="configOptionDesktop62">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="stoppers" id="configOptionDesktop63">
+                                            <label for="configOptionDesktop63">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="stoppers" id="configOptionDesktop64">
+                                            <label for="configOptionDesktop64">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 7 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar7" data-order="7"
+                                        data-name="lifting-axile">
+                                        <h6 class="col-12 p-0">
+                                            Подъемная ось
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="lifting-axile"
+                                                id="configOptionDesktop71">
+                                            <label for="configOptionDesktop71">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="lifting-axile" id="configOptionDesktop72">
+                                            <label for="configOptionDesktop72">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="lifting-axile" id="configOptionDesktop73">
+                                            <label for="configOptionDesktop73">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="lifting-axile" id="configOptionDesktop74">
+                                            <label for="configOptionDesktop74">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 8 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar8" data-order="8"
+                                        data-name="num-of-sections">
+                                        <h6 class="col-12 p-0">
+                                            Кол-во отсеков
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="num-of-sections"
+                                                id="configOptionDesktop81">
+                                            <label for="configOptionDesktop81">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="num-of-sections" id="configOptionDesktop82">
+                                            <label for="configOptionDesktop82">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="num-of-sections" id="configOptionDesktop83">
+                                            <label for="configOptionDesktop83">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="num-of-sections" id="configOptionDesktop84">
+                                            <label for="configOptionDesktop84">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 9 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar9" data-order="9"
+                                        data-name="recuper-system">
+                                        <h6 class="col-12 p-0">
+                                            Система рекуперации
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="recuper-system"
+                                                id="configOptionDesktop91">
+                                            <label for="configOptionDesktop91">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="recuper-system" id="configOptionDesktop92">
+                                            <label for="configOptionDesktop92">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="recuper-system" id="configOptionDesktop93">
+                                            <label for="configOptionDesktop93">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="recuper-system" id="configOptionDesktop94">
+                                            <label for="configOptionDesktop94">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 10 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar10" data-order="10"
+                                        data-name="two-sides-draining">
+                                        <h6 class="col-12 p-0">
+                                            Слив на 2 стороны
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="two-sides-draining"
+                                                id="configOptionDesktop101">
+                                            <label for="configOptionDesktop101">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="two-sides-draining" id="configOptionDesktop102">
+                                            <label for="configOptionDesktop102">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="two-sides-draining" id="configOptionDesktop103">
+                                            <label for="configOptionDesktop103">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="two-sides-draining" id="configOptionDesktop104">
+                                            <label for="configOptionDesktop104">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 11 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar11" data-order="11"
+                                        data-name="blow-station">
+                                        <h6 class="col-12 p-0">
+                                            Насосная станция
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="blow-station"
+                                                id="configOptionDesktop111">
+                                            <label for="configOptionDesktop111">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="blow-station" id="configOptionDesktop112">
+                                            <label for="configOptionDesktop112">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="blow-station" id="configOptionDesktop113">
+                                            <label for="configOptionDesktop113">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="blow-station" id="configOptionDesktop114">
+                                            <label for="configOptionDesktop114">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 12 -->
+                                    <div class="d-flex flex-wrap d-md-none" id="cofigsVar12" data-order="12"
+                                        data-name="counter-filter">
+                                        <h6 class="col-12 p-0">
+                                            Счетчик с фильтром ППО-40
+                                        </h6>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input class="default-choose" type="radio" name="counter-filter"
+                                                id="configOptionDesktop121">
+                                            <label for="configOptionDesktop121">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="counter-filter" id="configOptionDesktop122">
+                                            <label for="configOptionDesktop122">TOHAP2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="counter-filter" id="configOptionDesktop123">
+                                            <label for="configOptionDesktop123">BPW2</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-0">
+                                            <input type="radio" name="counter-filter" id="configOptionDesktop124">
+                                            <label for="configOptionDesktop124">BPW2</label>
+                                        </div>
+                                    </div>
+
+                                </form>
+                                <div
+                                    class="col-12 d-flex flex-wrap justify-content-between p-0 configurator__right__buttons">
+                                    <div class="gallery-nav d-flex align-items-end">
+                                        <button class="gallery-btn switch-option-btn" data-direction="prev">Предыдущий шаг</button>
+                                        <button class="gallery-btn switch-option-btn" data-direction="next">Следующий шаг</button>
+                                    </div>
+                                    <button class="standart-btn black-btn" disabled id="configurateBtn"
+                                        title="Сконфигурируйте все опции прежде, чем продолжить">Сконфигурировать</button>
+                                </div>
+                            </div>
+                            <div id="configBottomSecondPart"
+                                class="configurator__right__bottom configurator__right__hidden-btns d-none"
+                                class="col-12 d-flex flex-wrap justify-content-between p-0 configurator__right__hidden-btns">
+                                <button class="standart-btn black-btn" id="orderBtn"
+                                    title="Сконфигурируйте все опции прежде, чем продолжить">Заказать</button>
+                                <button class="standart-btn white-btn" id="countLeasingBtn"
+                                    title="Сконфигурируйте все опции прежде, чем продолжить">Рассчитать лизинг</button>
+                                <button class="standart-btn white-btn" id="goBackBtn"
+                                    title="Сконфигурируйте все опции прежде, чем продолжить">Редактировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    @@include('parts/footer.html')

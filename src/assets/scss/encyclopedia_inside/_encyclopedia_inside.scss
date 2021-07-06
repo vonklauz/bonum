@@ -1,0 +1,22 @@
+.encyclopedia_inside{
+    margin: 0 0 4em 0;
+    .encyclopedia_inside_heading{
+        font-size: 24px;
+        line-height: 26px;
+        font-family:$neoMedium;
+        margin: 2em 0 1em 0;
+    }
+    .encyclopedia_inside_txt{
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $neoRegular;
+        margin: 1em 0 0 0;
+    }
+    .encyclopedia_inside_h5{
+        font-size: 17px;
+        line-height: 26px;
+        font-family:$neoMedium;
+        font-weight: 500;
+        margin: 1em 0;
+    }
+}

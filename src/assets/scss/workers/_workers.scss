@@ -1,0 +1,115 @@
+.workers {
+    padding-bottom: 60px;
+
+    .justify-content-xl-start {
+        margin-top: 30px;
+    }
+
+    &__card {
+        display: flex;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+        max-width: 360px;
+        width: 100%;
+        margin-top: 35px;
+        margin-right: 35px;
+
+        img {
+            width: 140px;
+            min-width: 140px;
+            max-height: 100%;
+        }
+
+        &__texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px 8px 30px 25px;
+
+            h5 {
+                margin: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            a {
+                width: fit-content;
+                color: #ffffff !important;
+            }
+        }
+    }
+}
+
+.worker-full {
+    &__card {
+        padding-top: 26px;
+        padding-bottom: 60px;
+
+        img {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        &__texts {
+            margin-left: 20px;
+
+            h5 {
+                font-size: 20px;
+                line-height: 21px;
+                margin-bottom: 0;
+                font-family: $neoMedium;
+
+                &:first-of-type {
+                    margin-top: 50px;
+                }
+
+                &:last-of-type {
+                    margin-top: 27px;
+                }
+            }
+
+            p {
+                font-family: 'Arial';
+                margin-top: 30px;
+                font-size: 14px;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                color: #333333 !important;
+                font-family: 'Arial';
+                font-weight: bold;
+
+                &:first-of-type {
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1210px) {
+    .workers__card {
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media(min-width: 825px) and (max-width: 1209px) {
+    .workers__card {
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .workers__card {
+        &:nth-child(1n) {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.agro-goods-row {
+    margin-top: 3.75rem;
+
+    .goods-row__card {
+        max-width: 609px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+
+        img {
+            max-width: 100%;
+        }
+
+        &__headliner {
+            padding: 0 .625rem;
+            font-size: 22px;
+            line-height: 24px;
+            color: #333333;
+            font-family: $neoMedium;
+        }
+
+        &__texts {
+            border-top: 1px solid #CBCBCB;
+            border-bottom: 1px solid #CBCBCB;
+            padding: .5rem .625rem;
+
+            .between {
+                height: auto;
+                width: 1px;
+                background: #cbcbcb;
+            }
+        }
+
+        &__text {
+            p {
+                color: #333333;
+
+                &:first-child {
+                    font-size: 16px;
+                    line-height: 17px;
+                    font-family: 'Arial';
+                }
+
+                &:last-child {
+                    font-size: 18px;
+                    line-height: 19px;
+                    font-family: $neoMedium;
+                    margin-top: .5rem;
+                }
+            }
+        }
+
+        &__bottom-text {
+            font-size: 12px;
+            line-height: 14px;
+            font-family: 'Arial';
+            margin-top: .625rem;
+            padding: 0 .625rem;
+        }
+
+        &__buttons {
+            margin: 1rem 0;
+            padding: 0 .625rem;
+
+            .standart-btn {
+                font-size: 18px;
+                line-height: 19px;
+                padding: .5rem 2rem;
+
+                &:first-child {
+                    margin-right: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 510px) {
+    .agro-goods-row {
+        .goods-row__card {
+            &__text {
+
+                &:nth-child(4),
+                &:nth-child(5) {
+                    margin-top: 1.25rem;
+                }
+            }
+
+            .standart-btn { 
+                width: 100%;
+
+                &:first-child {
+                    margin-right: 0;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}

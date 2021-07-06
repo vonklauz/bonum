@@ -1,0 +1,56 @@
+.catalog-single__stages-wrapper {
+    position: absolute;
+    height: 100%;
+    left: calc((100vw - 1240px) / 2 / 2);
+    top: 0;
+}
+
+.catalog-single__stages {
+    display: none;
+    position: sticky;
+    width: 10px;
+    z-index: 1;
+}
+
+.has-height {
+    height: auto;
+}
+
+@media(min-width: 1260px) {
+
+    .catalog-single__stages {
+        display: block;
+        left: 0;
+        list-style-type: none;
+        padding: 0;
+        top: calc((100vh - 532px) / 2);
+
+        .catalog-single__stage {
+            height: 60px;
+            width: 10px;
+            border-radius: 20px;
+            background-color: #CBCBCB;
+            margin-top: 1rem;
+            transition: all .25s;
+
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            .nav-link {
+                padding: 0;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .active {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}

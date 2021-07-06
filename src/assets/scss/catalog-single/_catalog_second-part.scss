@@ -1,0 +1,44 @@
+.catalog-single__second-part {
+    background-color: #2e2e2e;
+    padding: 2rem 0;
+
+    .gallery-nav {
+        margin: 1.625rem 0;
+
+        .gallery-btn {
+            background-color: #ffffff;
+
+            &:after {
+                border-top: 2px solid rgba(0, 0, 0, 0.8);
+                border-left: 2px solid rgba(0, 0, 0, 0.8);
+            }
+
+            &:hover {
+                background-color: $red;
+            }
+        }
+    }
+}
+
+.catalog-single__carousel-item {
+    cursor: pointer;
+}
+
+#titleImage {
+    height: auto !important;
+
+    img {
+        max-width: 100%;
+        width: auto !important;
+    }
+}
+
+#catalogSingleCarosuel {
+    margin: auto;
+}
+
+@media(min-width: 1110px) {
+    #titleImage {
+        min-height: 700px;
+    }
+}

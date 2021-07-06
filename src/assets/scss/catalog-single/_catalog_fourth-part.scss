@@ -1,0 +1,141 @@
+#catalogFourth {
+    background-color: #2E2E2E;
+}
+
+.catalog-single__details {
+    color: #ffffff;
+    padding: 2.875rem 1rem 5.625rem 1rem;
+    width: 420px;
+
+    h3 {
+        color: #ffffff !important;
+    }
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-top: 1.75rem;
+
+        h5 {
+            font-family: $neoMedium;
+            margin-bottom: .625rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 19px;
+        }
+    }
+
+    hr {
+        border-top-color: #ffffff !important;
+        margin: 1.75rem 0;
+    }
+}
+
+.catalog-single__details-visual {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fdfdfd;
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__absolute {
+        position: absolute;
+        transition: all .25s;
+        opacity: .65;
+        cursor: pointer;
+
+        &_line {
+            border: 2px solid rgba(0, 0, 0, 0.8);
+            width: min-content;
+            margin: auto;
+            height: 210px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        &_border {
+            width: 34px;
+            height: 34px;
+            border: 2px dotted #F52F2F;
+            border-radius: 100%;
+            transform: rotate(-26deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .25s;
+        }
+
+        &_white {
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            background-color: #fff;
+            margin: auto;
+        }
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.03);
+
+            .catalog-single__details-visual__absolute_border {
+                transform: rotate(26deg);
+            }
+        }
+
+        &__first {
+            top: 27%;
+            left: 29%;
+        }
+
+        &__second {
+            top: 23%;
+            left: 45%;
+        }
+
+        &__third {
+            top: 14%;
+            left: 63%;
+        }
+
+        &__fourth {
+            left: 48%;
+            top: 53%;
+        }
+
+        &__fiveth {
+            right: 25%;
+            top: 22%;
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .catalog-single__details-visual {
+        &__absolute {
+            &__first {
+                top: 29%;
+            }
+
+            &__second {
+                top: 25%;
+            }
+
+            &__third {
+                top: 16%;
+            }
+
+            &__fourth {
+                top: 45%;
+            }
+
+            &__fiveth {
+                top: 24%;
+            }
+        }
+    }
+}

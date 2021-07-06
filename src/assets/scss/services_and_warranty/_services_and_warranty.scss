@@ -1,0 +1,20 @@
+.map-primary {
+    .form-wrapper {
+        p {
+            margin-bottom: 0;
+            margin-top: 1.5rem;
+            font-family: $neoMedium;
+            font-size:40px;
+        }
+    }
+}
+
+.services_and_warranty {
+    .heading-services_and_warranty {
+        margin-top: 0;
+    }
+
+    &__warning {
+        font-family: 'Arial';
+    }
+}
