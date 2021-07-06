@@ -475,14 +475,15 @@ form {
         display: flex;
 
         div {
-            padding: 1rem 1.25rem;
+            padding: 1rem;
             @include font($neoRegular, 'normal', 22px, 24px);
-            width: 50%;
+            width: 40%;
             text-align: center;
 
             &:first-child {
                 background-color: #333333;
                 color: #fff;
+                width: 60%;
             }
 
             &:last-child {
