@@ -1,21 +1,17 @@
 .primary {
     max-width: 1920px;
     margin: 0 auto;
-    .container-fluid {
-        height: 100%;
-    }
 
     .left-half {
-        width: 38%;
-        min-width: 411px;
+        width: 20%;
+        min-width: 360px;
         background-color: $e2Color;
-        padding-right: 5.1875rem;
         padding-top: 2rem;
         padding-bottom: 1.5rem;
         padding-left: 1rem;
 
         .form-wrapper {
-            width: 312px;
+            width: 320px;
             color: #ffffff;
 
             p {
@@ -26,7 +22,7 @@
     }
 
     .right-half {
-        width: 62%;
+        width: 80%;
         background-repeat: no-repeat;
         background-position: center 70%;
         background-size: cover;
@@ -87,6 +83,23 @@
 
         .right-half {
             background-image: none !important;
+        }
+    }
+}
+
+@media(min-width:991px) {
+    .primary {
+        .container {
+            height: 560px;
+        }
+    }
+}
+
+@media(min-width:991px) and (max-width:1235px) {
+    .primary {
+        .right-half {
+            background-size: contain;
+            background-position: center;
         }
     }
 }

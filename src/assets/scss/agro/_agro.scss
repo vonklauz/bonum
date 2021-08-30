@@ -31,14 +31,18 @@
 
 .agro__about-section {
     margin-top: 2rem;
+    font-family: $neoRegular;
 
     p {
-        font-family: 'Arial';
         margin: 1.5rem 0 0 0;
     }
 
     img {
         max-width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
     }
 }
 
@@ -56,7 +60,7 @@
 // Форма
 .agro-choose-complectation {
     background-color: $green;
-    background-image: url(../img/agro/agro-form.png);
+    background-image: url(../img/__IMG_49801.png);
 
     .standard-headliner {
         text-transform: uppercase;
@@ -76,6 +80,17 @@
     }
 }
 
+// галерея на странице агро
+.agro-gallery {
+    background-color: #333;
+    padding-bottom: 1rem;
+    .splide__slide {
+        img {
+            transform: scale(1) !important;
+        }
+    }
+}
+
 @media(max-width: 1450px) {
     .agro-absolute {
         display: none;
@@ -87,5 +102,11 @@
         .phone-and-hamburger {
             background-color: $green !important;
         }
+    }
+}
+
+@media(max-width: 767px) {
+    .agro-choose-complectation {
+        background-image: none;
     }
 }

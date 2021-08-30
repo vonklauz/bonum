@@ -2,8 +2,8 @@
     margin-top: 20px;
 
     .right-half {
-        padding-left: 2.5rem;
-        padding-top: 1.875rem;
+        // padding-left: 2.5rem;
+        // padding-top: 1.875rem;
     }
 }
 
@@ -50,7 +50,6 @@
         font-size: 16px;
         line-height: 17px;
         color: #333333;
-        font-family: 'Arial';
     }
 
     .standart-btn {
@@ -63,7 +62,6 @@
     display: flex;
     align-items: center;
     color: $darkFontColor !important;
-    font-family: 'Arial';
     margin-top: 1.25rem;
 
     &:after {

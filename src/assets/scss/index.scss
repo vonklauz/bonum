@@ -1,15 +1,16 @@
 @import '_fonts';
 
 //Цвета
-$e2Color:#2E2E2E;
+$e2Color:#333;
 $darkFontColor: rgba(0, 0, 0, 0.8);
 $red: #F52F2F;
 $green: #00B052;
 
 
 //Шрифты
-$neoRegular: 'Neo Sans Pro Regular';
-$neoMedium: 'Neo Sans Pro Medium';
+$neoRegular: 'Mont Regular';
+$neoMedium: 'Mont Medium';
+$boldFont: 'Mont Bold';
 
 //Для удобной задачи шрифта
 @mixin font($font_name, $weight, $size, $line_height) {
@@ -23,6 +24,7 @@ $neoMedium: 'Neo Sans Pro Medium';
 @import '_header';
 @import '_modal';
 @import '_primary';
+@import '_primary_catalog';
 @import '_advantages';
 @import '_main-gallery';
 @import '_promotes&leasing';
@@ -103,8 +105,17 @@ $neoMedium: 'Neo Sans Pro Medium';
 // Кайдзен
 @import 'kaizen/_kaizen';
 
-// 4040
+// 404
 @import '_404';
+
+// куки блок
+@import '_cookie_block';
+
+// для splide галерей
+@import '_splide_gallery';
+
+// ekko-lightbox
+@import '_ekko-styles';
 
 //Ширина сетки на сайте и изменение стилей бутстрапа
 .container {
@@ -124,10 +135,12 @@ $neoMedium: 'Neo Sans Pro Medium';
 
 body {
     position: relative;
+    font-family: $neoRegular;
 }
 
 p {
     margin-bottom: 0;
+    font-family: $neoRegular;
 }
 
 img {
@@ -140,9 +153,39 @@ button:disabled {
     background-color: rgba(0, 0, 0, .2) !important;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+    font-family: $neoRegular;
+}
+
+button {
+    border-radius: 4px;
+}
+
+a {
+    color: #ed6e07;
+}
+
+// хлебные крошки
+.breadcrumb-item sup {
+    top: 3px
+}
+
+.breadcrumb-item br {
+    display: none
+}
+
 //Стили для большинства заголовков на сайте
 .standard-headliner {
-    @include font($neoMedium, 'normal', 30px, 32px);
+    @include font($boldFont, 'normal', 29px, 31px);
+    text-transform: uppercase
+}
+
+h1.standard-headliner {
+    @include font($boldFont, 'normal', 30px, 32px);
+    text-transform: uppercase;
+    text-align: center;
 }
 
 //Стили для большинства текстов/лейблов на сайте
@@ -160,6 +203,8 @@ button:disabled {
     cursor: pointer;
     transition: all .25s;
     text-decoration: none !important;
+    text-align: center;
+    border-radius: 4px;
 
     a {
         text-decoration: none;
@@ -240,6 +285,34 @@ a.standart-btn {
 
     &:hover {
         background-color: $red;
+    }
+}
+
+a.more-details-btn {
+    &:after {
+        height: 9px;
+    }
+}
+
+.news-and-promotes-card {
+    padding: 0 0 1.25rem 0 !important;
+
+    a.more-details-btn {
+        padding: 0.7rem;
+        margin-left: 1.25rem;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    h5,
+    p {
+        padding: 0 1.25rem;
+    }
+
+    p {
+        min-height: 50px;
     }
 }
 
@@ -459,13 +532,14 @@ form {
 
 //Карточка акции / новости
 .news-and-promotes-card {
-    
+
     width: 100%;
     max-width: 400px;
     padding: 1.25rem;
     min-height: 446px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
     background-color: #fff;
+    margin-bottom: 1rem;
 
     img {
         width: 100%;
@@ -555,6 +629,28 @@ form {
         display: block;
     }
 }
+
+strong,
+b {
+    font-family: $boldFont;
+}
+
+// Для перенесённого контента со старого сайта
+.content_inner_sait {
+    font-family: $neoRegular;
+
+    strong {
+        font-family: $boldFont;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1272px) {
+    .px-xl-0 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
 
 @media(max-width: 991px) {
     .gallery-btn {

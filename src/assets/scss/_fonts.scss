@@ -1,19 +1,43 @@
 @font-face {
-    font-family: 'Neo Sans Pro Medium';
-    src: url('../fonts/NeoSansPro-Medium.eot');
-    src: url('../fonts/NeoSansPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NeoSansPro-Medium.woff') format('woff'),
-        url('../fonts/NeoSansPro-Medium.ttf') format('truetype');
+    font-family: 'Mont Light';
+    src: url('../fonts/Mont-Light.eot');
+    src: url('../fonts/Mont-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Light.woff2') format('woff2'),
+        url('../fonts/Mont-Light.woff') format('woff'),
+        url('../fonts/Mont-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Neo Sans Pro Regular';
-    src: url('../fonts/NeoSansPro-Regular.eot');
-    src: url('../fonts/NeoSansPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NeoSansPro-Regular.woff') format('woff'),
-        url('../fonts/NeoSansPro-Regular.ttf') format('truetype');
+    font-family: 'Mont Regular';
+    src: url('../fonts/Mont-Regular.eot');
+    src: url('../fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Regular.woff2') format('woff2'),
+        url('../fonts/Mont-Regular.woff') format('woff'),
+        url('../fonts/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont Medium';
+    src: url('../fonts/Mont-SemiBold.eot');
+    src: url('../fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-SemiBold.woff2') format('woff2'),
+        url('../fonts/Mont-SemiBold.woff') format('woff'),
+        url('../fonts/Mont-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont Bold';
+    src: url('../fonts/Mont-Bold.eot');
+    src: url('../fonts/Mont-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mont-Bold.woff2') format('woff2'),
+        url('../fonts/Mont-Bold.woff') format('woff'),
+        url('../fonts/Mont-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

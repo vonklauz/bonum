@@ -53,12 +53,9 @@
         background-color: #FFFFFF;
         position: absolute;
         bottom: 1rem;
-
-        a {
-            text-decoration: none;
-            color: $darkFontColor;
-            width: 100%;
-        }
+        text-decoration: none;
+        color: $darkFontColor !important;
+        // width: 100%;
 
         &:after {
             border-top: 2px solid $darkFontColor;
@@ -117,7 +114,13 @@
 
 .catalog_button {
     margin: 140px 0 0 0;
-    height: 29px;
+    display: block;
+
+    &::after {
+        height: 8px !important;
+        margin-left: 1rem !important;
+        
+    }
 }
 
 .back-de0900 {
@@ -128,7 +131,7 @@
     background: #0E0900;
 }
 
-@media(min-width: 1251px) and (max-width: 1667px) {
+@media(min-width: 1251px) and (max-width: 1902px) {
 
     .catalog-card {
         width: 412px;
@@ -163,10 +166,10 @@
     }
 
     .catalog-card__txt___heading {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 19px;
     }
-    
+
     .vertical-bonum {
         font-size: 60px;
         bottom: 30px;
@@ -201,7 +204,7 @@
         padding: 1.375rem 1rem;
         justify-content: space-between;
 
-        .catalog_button{
+        .catalog_button {
             position: inherit;
             bottom: inherit;
             // width: 147px;

@@ -1,0 +1,129 @@
+.primary-catalog {
+  padding: 3.75rem 0;
+
+  &__card {
+    background-color: #f2f2f2;
+    transition: all .25s;
+    max-width: 350px;
+    margin: 16px auto 0 auto;
+    border-radius: 4px;
+    text-align: center;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    a {
+      &:first-child {
+        display: block;
+        color: $e2Color !important;
+        text-decoration: none !important;
+      }
+    }
+
+    p {
+      padding:0 1.5rem;
+
+      &:first-of-type {
+        font-family: $boldFont;
+        word-wrap: break-word;
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 800;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        min-height: 50px;
+      }
+
+      &:last-of-type {
+        font-family: $neoRegular;
+        margin-top: 1rem;
+        min-height: 144px;
+      }
+    }
+
+    .primary-catalog__link {
+      background-color: #bcbcbc;
+      color: #fff !important;
+      margin: 1rem auto 0 auto;
+    }
+
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+
+  &__link {
+    padding: .75rem;
+    margin: 2.2rem auto 0 auto;
+    display: block;
+    width: fit-content;
+    border-radius: 4px;
+    background-color: #bcbcbc;
+    color: #333 !important;
+    text-decoration: none !important;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.2rem;
+    font-family: $neoMedium;
+  }
+
+  .splide__slide.is-active {
+    .primary-catalog__card {
+      background-color: #bcbcbc;
+
+      .primary-catalog__link {
+        background-color: #f2f2f2;
+        color: #333 !important;
+      }
+    }
+  }
+}
+
+.footer-logo {
+  max-width: 180px;
+}
+
+@media(min-width: 730px) and (max-width:1000px) {
+  .primary-catalog {
+    &__card {
+
+      p {
+        padding:0 1rem;
+        &:first-of-type {
+          font-size: 1.4rem;
+        }
+
+        &:last-of-type {
+          font-size: .9rem;
+        }
+      }
+    }
+
+    &__link {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media(max-width: 729px) {
+  .primary-catalog {
+    &__card {
+
+      p {
+        padding:0 1rem;
+        &:first-of-type {
+          font-size: 1.4rem;
+          min-height: auto;
+        }
+
+        &:last-of-type {
+          font-size: .9rem;
+          min-height: auto;
+        }
+      }
+    }
+  }
+}

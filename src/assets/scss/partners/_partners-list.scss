@@ -1,14 +1,21 @@
-.partners_list__item{
+.partners_list__item {
     width: 283px;
     height: 209px;
-    &:hover{
-        border:2px solid red;
+    border: 2px solid transparent;
+    transition: all .25s;
+    justify-content: center;
+
+    &:hover {
+        border: 2px solid red;
     }
-    img{
+
+    img {
         max-width: 100%;
+        max-height: 200px !important;
     }
 }
-.partners_heading{
+
+.partners_heading {
     font-size: 32px;
     line-height: 34px;
     font-family: $neoMedium;

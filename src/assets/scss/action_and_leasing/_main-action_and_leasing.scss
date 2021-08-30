@@ -1,13 +1,17 @@
-.action_and_leasing__form{
-    margin:0 80px 0 0;
+.action_and_leasing__form {
+    margin: 0 80px 0 0;
 }
 
-.action_and_leasing{
-    margin:0 0 60px 0;
+.action_and_leasing {
+    margin: 0 0 60px 0;
+
+    p {
+        font-family: $neoRegular;
+    }
 }
 
-.social-line{
-    ul{
+.social-line {
+    ul {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
@@ -16,12 +20,13 @@
     }
 }
 
-.action_and_leasing__txt{
-    ul{
-        list-style-type: none;  
-        
+.action_and_leasing__txt {
+    ul {
+        list-style-type: none;
+
     }
 }
-.action_and_leasing__txt_heading{
+
+.action_and_leasing__txt_heading {
     margin: 2em 0;
 }

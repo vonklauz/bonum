@@ -10,12 +10,18 @@
 
 .award-card {
     width: 100%;
-    max-width: 288px;
+    max-width: 125px;
     // max-height: 252px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    filter: grayscale(1);
+    transition: all .25s;
 
     img {
         width: 100%;
+    }
+
+    &:hover {
+        filter: grayscale(0);
     }
 }
 

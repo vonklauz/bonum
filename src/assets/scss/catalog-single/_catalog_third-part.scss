@@ -29,20 +29,28 @@
 
             ul {
                 list-style-type: "- ";
-                font-family: 'Arial';
+                font-family: $neoRegular;
                 font-size: 14px;
                 line-height: 20px;
                 color: #333333;
+                padding: 0;
+                padding-left: 10px;
 
-                li{
+                b {
+                    font-family: $boldFont;
+                }
+
+                li {
                     &::first-letter {
                         text-transform: capitalize;
                     }
+
+                    margin-top: 7px;
                 }
             }
 
             p {
-                font-family: 'Arial';
+                font-family: $neoRegular;
                 font-size: 14px;
                 line-height: 20px;
                 color: #333333;
@@ -87,10 +95,29 @@
     }
 
     ul {
-        padding: 0;
         list-style-type: none;
+        font-family: $neoRegular;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333333;
+        padding: 0;
+
+        b {
+            font-family: $boldFont;
+        }
 
         li {
+            margin-top: 7px;
+
+            &::first-letter {
+                text-transform: capitalize;
+            }
+
+            ul {
+                list-style-type: "- ";
+                padding-left: 10px;
+            }
+
             h5 {
                 font-family: $neoMedium;
                 font-size: 20px;
@@ -99,7 +126,7 @@
             }
 
             p {
-                font-family: 'Arial';
+                font-family: $neoRegular;
                 font-size: 14px;
                 line-height: 16px;
                 color: #333333;

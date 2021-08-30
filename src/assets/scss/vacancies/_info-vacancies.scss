@@ -17,6 +17,11 @@
 }
 
 .vacancies-info {
+    font-family: $neoRegular;
+
+    strong {
+        font-family: $boldFont;
+    }
     ul {
         list-style-type: none;
         padding: 0;

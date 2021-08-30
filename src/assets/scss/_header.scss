@@ -30,22 +30,24 @@
         margin-top: .3125rem;
         padding: .625rem 0;
         border: none;
-        border-radius: 0px;
+        border-radius: 4px;
     }
 }
 
 //Стили для гамбургера
 .hamburger {
-    width: 34px;
+    width: 45px;
+    height: 36px;
     padding-bottom: .25rem;
 
     .hamburger-part {
         margin-top: .25rem;
         height: .25rem;
-        width: 100%;
+        width: 35px;
         background-color: #ffffff;
         border-radius: 10px;
         transition: all .25s;
+        float: right;
     }
 }
 
@@ -59,7 +61,6 @@
             display: none;
         }
 
-        &:nth-child(2),
         &:nth-child(3) {
             background-color: $red;
             margin-top: -4px;
@@ -68,6 +69,8 @@
 
         &:nth-child(2) {
             transform: rotate(45deg);
+            background-color: $red;
+            margin-top: 14px;
         }
 
         &:nth-child(3) {
@@ -97,6 +100,17 @@
             display: flex;
             align-items: center;
 
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:nth-of-type(2) {
+                &::before {
+                    content: url(../img/agro.svg);
+                    margin-right: 5px;
+                }
+            }
+
             a {
                 text-decoration: none;
                 color: $e2Color;
@@ -120,7 +134,7 @@
                 left: 0;
                 background-color: #fff;
                 z-index: 2;
-                box-shadow: 0 1px 10px 1px rgba(0,0,0,.15);
+                box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .15);
 
                 .dropdown-item {
                     padding: .5rem .652rem;
@@ -148,9 +162,21 @@
             }
         }
 
+        .active-menu {
+            a {
+                &:first-child {
+                    color: $red;
+                }
+            }
+        }
+
         .menu-border {
             height: auto;
             border-right: 1px solid rgba(102, 99, 102, 0.2);
+
+            &:last-of-type {
+                display: none;
+            }
         }
 
 
@@ -161,6 +187,12 @@
 
                 &:first-child {
                     margin-left: 0;
+                }
+
+                img {
+                    border-radius: 4px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
@@ -178,6 +210,10 @@
                 position: absolute;
                 top: 6px;
                 right: -15px;
+            }
+
+            &::before {
+                content: none !important;
             }
         }
     }
@@ -240,15 +276,38 @@
                 list-style-type: none;
 
                 .mobile-menu-item {
-                    padding: 1.25rem 0;
+                    padding: 1rem 0;
                     padding-left: 1rem;
+                }
+
+                li.with-border {
+                    img {
+                        width: auto;
+                        height: auto;
+                    }
+
+                    &:not(.lang-menu) {
+
+                        a {
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
                 }
 
                 li {
 
                     a {
-                        @include font($neoRegular, 'normal', 18px, 19px);
+                        @include font($neoRegular, 'normal', 18px, 26px);
                         color: #333333;
+
+                        img {
+                            border-radius: 4px;
+                            width: 50px;
+                            height: 50px;
+                            margin-right: 10px;
+                        }
                     }
 
                     .mobile-menu-collapse {

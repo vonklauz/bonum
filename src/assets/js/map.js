@@ -2907,7 +2907,7 @@ ymaps.ready(() => {
         },
         {
             "CenterID": "178",
-            "Name": "Питер Бас Центр ",
+            "Name": "Питер Бас Центр ",
             "CityID": "21",
             "TypeID": "52",
             "Promo": "",

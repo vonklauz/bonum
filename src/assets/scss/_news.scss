@@ -9,3 +9,11 @@
         font-size: 40px;
     }
 }
+
+@media (min-width:991px) {
+    .news-title {
+        .container {
+            min-height: 571px;
+        }
+    }
+}
